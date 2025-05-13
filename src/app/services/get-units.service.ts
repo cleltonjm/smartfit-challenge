@@ -1,7 +1,7 @@
 import { HttpClient } from '@angular/common/http';
 import { Injectable } from '@angular/core';
 import { Observable } from 'rxjs';
-import { UnitsResponse } from '../@types/units-response.interface';
+import { UnitsResponse } from '../types/units-response.interface';
 
 @Injectable({
   providedIn: 'root'
