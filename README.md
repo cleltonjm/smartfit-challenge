@@ -1,59 +1,52 @@
-# DesafioSmartfit
+# Desafio Frontend - Smart Fit
 
-This project was generated using [Angular CLI](https://github.com/angular/angular-cli) version 19.2.11.
+![Smart Fit](./public/logo.svg)
 
-## Development server
+Este repositório contém a solução para o desafio de [Front-end da Smart Fit](https://github.com/bioritmo/front-end-code-challenge-smartsite/tree/master). Foi utilizado o framework Angular para desenvolver a aplicação.
 
-To start a local development server, run:
+## 📖 Sobre o desafio
 
-```bash
-ng serve
-```
+A Smart Fit, atuando no segmento de fitness, passou por várias mudanças durante a pandemia. Foi necessário desenvolver uma página para buscar unidades abertas ou fechadas para consulta e reserva. 
 
-Once the server is running, open your browser and navigate to `http://localhost:4200/`. The application will automatically reload whenever you modify any of the source files.
+Neste desafio, foi implementado as seguintes funcionalidades de acordo com as regras de negócio definidas:
 
-## Code scaffolding
+### Funcionalidades
+[x] Carrega unidades através do arquivo JSON [locations.json](https://test-frontend-developer.s3.amazonaws.com/data/locations.json) utilizando o método `GET`.
+[x] Busca por todas as unidades.
+[x] Busca por unidades com filtros.
+[x] Previsão do número de resultados encontrados.
+[x] Listagem das unidades encontradas após a busca.
 
-Angular CLI includes powerful code scaffolding tools. To generate a new component, run:
+### Regras de negócio
+- Filtra unidades abertas ou fechadas.
+- Filtra unidades por período de funcionamento.
+- Exibe a mensagem "Nenhuma unidade encontrada" quando não há resultados.
+- Valida e exibe os ícones corretos de acordo com o status da unidade.
 
-```bash
-ng generate component component-name
-```
+## 🎨 Layout
 
-For a complete list of available schematics (such as `components`, `directives`, or `pipes`), run:
+O layout da aplicação foi baseado nos materiais disponibilizados, incluindo designs para dispositivos móveis e desktop, cores, imagens e fontes. A fidelidade ao layout proposto foi mantida, e a aplicação é responsiva para dispositivos móveis, tablets e desktops.
 
-```bash
-ng generate --help
-```
+## ⚙️ Como Executar
 
-## Building
+Para executar a aplicação localmente, siga os passos abaixo:
 
-To build the project run:
-
-```bash
-ng build
-```
-
-This will compile your project and store the build artifacts in the `dist/` directory. By default, the production build optimizes your application for performance and speed.
-
-## Running unit tests
-
-To execute unit tests with the [Karma](https://karma-runner.github.io) test runner, use the following command:
+1. Clone este repositório:
 
 ```bash
-ng test
+  git clone https://github.com/cleltonjm/smartfit-challenge.git
+
+  cd smartfit-challenge
 ```
 
-## Running end-to-end tests
-
-For end-to-end (e2e) testing, run:
+2. Instale as dependências
 
 ```bash
-ng e2e
+  npm install
 ```
 
-Angular CLI does not come with an end-to-end testing framework by default. You can choose one that suits your needs.
+3. Inicie a aplicação
 
-## Additional Resources
-
-For more information on using the Angular CLI, including detailed command references, visit the [Angular CLI Overview and Command Reference](https://angular.dev/tools/cli) page.
+```bash
+  npm start
+```
