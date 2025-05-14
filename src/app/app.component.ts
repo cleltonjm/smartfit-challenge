@@ -6,10 +6,11 @@ import { CardsListComponent } from "./components/cards-list/cards-list.component
 import { CommonModule } from '@angular/common';
 import { Location } from '../../src/app/types/location.interface';
 import { GetUnitsService } from './services/get-units.service';
+import { LegendComponent } from "./components/legend/legend.component";
 
 @Component({
   selector: 'app-root',
-  imports: [HeaderComponent, FormsComponent, CardsListComponent, CommonModule],
+  imports: [HeaderComponent, FormsComponent, CardsListComponent, CommonModule, LegendComponent],
   templateUrl: './app.component.html',
   styleUrl: './app.component.scss'
 })
